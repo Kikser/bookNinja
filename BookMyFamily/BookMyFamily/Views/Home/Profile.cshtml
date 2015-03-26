@@ -33,7 +33,7 @@
     }
 
     #profile_hover {
-        border-right: 1px solid black;
+        height: 300px;
         width: 50%;
         display: none;
         position: relative;
@@ -47,6 +47,13 @@
         text-align: center;
         padding: 50px;
         height: 100%;
+        -webkit-border-radius: 0px 92px 86px 0px;
+        -moz-border-radius: 0px 92px 86px 0px;
+        border-radius: 0px 92px 86px 0px;
+        background: rgba(138,227,156,0.5);
+        -webkit-box-shadow: #B3B3B3 4px 4px 4px;
+        -moz-box-shadow: #B3B3B3 4px 4px 4px;
+        box-shadow: #B3B3B3 4px 4px 4px;
     }
 
     #hidden_wrapper {
@@ -54,6 +61,10 @@
         top: 200px;
         left: 0px;
         width: 100%;
+        height: 300px;
+    }
+
+    img {
     }
 </style>
 <div id="wrapper">
@@ -68,7 +79,7 @@
         </div>
     </div>
     <div id="profile_image">
-        <img src="~/Content/img/family.jpg" />
+        <img src="~/Content/img/family.jpg" 33% round round; />
     </div>
 </div>
 <script src="~/Scripts/jquery-1.10.2.js"></script>
@@ -78,7 +89,7 @@
         if ($("#profile_hover").css("display") == "none") {
             $("#profile_hover").toggle(1500);
         }
-        else if 
+        else if
            ($("#profile_hover").css("display") == "block") {
             $("#profile_hover").fadeToggle('slow');
 
